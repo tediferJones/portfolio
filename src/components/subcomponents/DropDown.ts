@@ -6,7 +6,8 @@ export default function DropDown({ repoArr, title }: { repoArr: Repo[], title: s
   // const fixedTitle = title.replace(' ', '-')
   const fixedTitle = title.replaceAll(' & ', '-').replaceAll(' ', '-')
   return (
-    t('div', { className: `transition-colors duration-500 bg-sky-600`, id: `${fixedTitle}-container` }, [
+    // t('div', { className: `transition-colors duration-500 bg-sky-600`, id: `${fixedTitle}-container` }, [
+    t('div', { className: `transition-colors duration-500 bg-blue-600`, id: `${fixedTitle}-container` }, [
       t('hr'),
       t('button', {
         // id: title.replace(' & ', '-'),
@@ -14,8 +15,10 @@ export default function DropDown({ repoArr, title }: { repoArr: Repo[], title: s
         className: 'w-full text-xl text-gray-100 p-4 px-8 flex justify-between scroll-mt-32',
         value: `${title}RepoList`,
         onclick: () => {
-          document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-600')
-          document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-700')
+          // document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-600')
+          // document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-700')
+          document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-blue-600')
+          document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-blue-700')
 
           document.querySelector(`#${fixedTitle}-icon`)?.classList.toggle('rotate-0')
           document.querySelector(`#${fixedTitle}-icon`)?.classList.toggle('-rotate-90')

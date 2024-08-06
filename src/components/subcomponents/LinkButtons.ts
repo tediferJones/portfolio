@@ -10,11 +10,16 @@ codeUrl: string,
 pageUrl?: string,
 addClasses?: string
 }) {
-  const sharedClasses = 'flex-1 text-center p-4 flex justify-center items-center gap-2 text-gray-100 rounded-xl transition-colors duration-300';
+  // const sharedClasses = 'flex-1 text-center p-4 flex justify-center items-center gap-2 text-gray-100 rounded-xl transition-colors duration-300';
+  // const sharedClasses = 'flex-1 text-center p-4 flex justify-center items-center gap-2 text-white rounded-xl transition-colors duration-300';
+  // const sharedClasses = 'flex-1 text-center p-4 flex justify-center items-center gap-2 font-semibold text-blue-600 bg-white border-4 border-blue-600 rounded-xl transition-colors duration-300';
+  const sharedClasses = 'flex-1 text-center p-4 flex justify-center items-center gap-2 bg-blue-600 text-white rounded-xl transition-colors duration-300';
   return (
     t('div', { className: 'flex-1 flex flex-wrap p-2 gap-2 bg-white' + (addClasses ? ' ' + addClasses : '') }, [
       LinkTo({
-        className: `${sharedClasses} bg-blue-800 hover:bg-blue-950`,
+        // className: `${sharedClasses} bg-blue-800 hover:bg-blue-950`,
+        // className: `${sharedClasses} bg-gray-900 hover:bg-blue-950`,
+        className: sharedClasses,
         content: {
           href: codeUrl,
           name: 'View Code',
@@ -24,7 +29,9 @@ addClasses?: string
       }),
       !pageUrl ? undefined :
         LinkTo({
-          className: `${sharedClasses} bg-teal-500 hover:bg-teal-600`,
+          // className: `${sharedClasses} bg-teal-500 hover:bg-teal-600`,
+          // className: `${sharedClasses} bg-amber-700 hover:bg-teal-600`,
+          className: sharedClasses,
           content: {
             href: pageUrl,
             name: 'View Page',

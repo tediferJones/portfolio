@@ -33,12 +33,14 @@ export default function AboutMe() {
       }),
       t('div', { className: 'md:w-2/5 w-4/5 pt-12 md:py-12 flex flex-col justify-between gap-8' }, [
         t('h1', { 
-          className: `bg-sky-600 rounded-xl p-8 text-white text-center text-2xl relative transition-all duration-1000 bottom-[999px]`,
+          // className: `bg-sky-600 rounded-xl p-8 text-white text-center text-2xl relative transition-all duration-1000 bottom-[999px]`,
+          className: `bg-blue-600 rounded-xl p-8 text-white text-center text-2xl relative transition-all duration-1000 bottom-[999px]`,
           textContent: 'Welcome to my portfolio!',
           id: 'title'
         }),
         t('p', {
-          className: `bg-sky-600 rounded-xl p-8 text-white text-lg text-center relative transition-all duration-1000 left-[999px]`,
+          // className: `bg-sky-600 rounded-xl p-8 text-white text-lg text-center relative transition-all duration-1000 left-[999px]`,
+          className: `bg-blue-600 rounded-xl p-8 text-white text-lg text-center relative transition-all duration-1000 left-[999px]`,
           id: 'bio'
         }, bio.reduce<HTMLElement[]>((children, str, i) => {
             children.push(t('span', { textContent: str }))
@@ -56,7 +58,8 @@ export default function AboutMe() {
           ['Email', 'Phone'].map(key => {
             return (
               LinkTo({
-                className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-sky-600 hover:bg-sky-800 rounded-xl transition-colors duration-300',
+                // className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-sky-600 hover:bg-sky-800 rounded-xl transition-colors duration-300',
+                className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-blue-600 hover:bg-blue-800 rounded-xl transition-colors duration-300',
                 content: getLinkInfo(key)
               })
             )

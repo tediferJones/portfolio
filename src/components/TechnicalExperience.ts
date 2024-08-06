@@ -6,7 +6,8 @@ export default function TechnicalExperience() {
   return (
     t('div', {
       id: 'TechnicalExperience',
-      className: 'py-12 bg-sky-600 text-gray-100 w-full flex flex-col items-center scroll-mt-48 md:scroll-mt-32'
+      // className: 'py-12 bg-sky-600 text-gray-100 w-full flex flex-col items-center scroll-mt-48 md:scroll-mt-32'
+      className: 'py-12 bg-blue-600 text-white w-full flex flex-col items-center scroll-mt-48 md:scroll-mt-32'
     }, [
         t('div', { className: 'w-4/5 pb-4' }, [
           t('h1', {

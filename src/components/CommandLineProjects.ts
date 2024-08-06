@@ -13,7 +13,8 @@ export default function CommandLineProjects({ repos }: { repos: Repo[]}) {
     .reduce((total, key) => total += commandLineRepos[key].length, 0)
 
   return (
-    t('div', { id: 'CliProjects', className: 'bg-sky-600 w-full md:w-4/5 mb-12 md:rounded-xl overflow-clip scroll-mt-48 md:scroll-mt-32' }, [
+    // t('div', { id: 'CliProjects', className: 'bg-sky-600 w-full md:w-4/5 mb-12 md:rounded-xl overflow-clip scroll-mt-48 md:scroll-mt-32' }, [
+    t('div', { id: 'CliProjects', className: 'bg-blue-600 w-full md:w-4/5 mb-12 md:rounded-xl overflow-clip scroll-mt-48 md:scroll-mt-32' }, [
       t('h1', { className: 'text-2xl text-gray-100 p-4', textContent: `Command Line Projects and Algorithms (${total})` }),
       ...Object.keys(commandLineRepos).map(item => {
         return DropDown({
