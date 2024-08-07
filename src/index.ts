@@ -5,15 +5,22 @@ import type { Repo } from '@/types';
 import Header from '@/components/Header';
 import AboutMe from '@/components/AboutMe';
 import TechnicalExperience from '@/components/TechnicalExperience';
+import Loading from '@/components/subcomponents/Loading';
 import RecentProjects from '@/components/RecentProjects';
 import FrontEndProjects from '@/components/FrontEndProjects';
 import FullStackProjects from '@/components/FullStackProjects';
 import CommandLineProjects from '@/components/CommandLineProjects';
 import AllProjects from '@/components/AllProjects';
-import Loading from '@/components/subcomponents/Loading';
 
 // TO DO
 // Consider making header full width even at larger screen sizes
+// Install font awesome from npm instead of using CDN
+// Add manifest.json to public folder
+//  - Copy from scoreboard app
+//  - Will probably also have to resize ico
+// Make new favicon matching new primary color
+//  - Favicon can be found at fontawesome.com, named address-card
+// Consider trying to inline css and portrait into html file
 
 const loadingId = 'github'
 document.body.appendChild(

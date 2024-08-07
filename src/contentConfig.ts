@@ -105,6 +105,7 @@ const cliRepos: { [key: string]: string[] } = {
     'odin-stock-picker',
     'advent-of-code-2023',
     'google-foobar',
+    '1brc'
   ],
   'Command Line Games': [
     'odin-mastermind',

@@ -26,7 +26,8 @@ export default function AboutMe() {
     t('div',  { id: 'AboutMe', className: 'overflow-clip w-full flex justify-center items-center gap-8 flex-col-reverse md:flex-row rounded-xl scroll-mt-48 md:scroll-mt-32' }, [
       t('img', {
         // className: `-z-10 md:w-2/5 w-4/5 mb-12 md:my-12 rounded-xl relative transition-all duration-1000 md:top-0 top-[999px] md:right-[999px]`,
-        className: `max-h-[720px] max-w-[720px] -z-10 md:w-2/5 w-4/5 mb-12 md:my-12 rounded-xl relative transition-all duration-1000 md:top-0 top-[999px] md:right-[999px]`,
+        className: `aspect-square max-h-[720px] max-w-[720px] -z-10 md:w-2/5 w-4/5 mb-12 md:my-12 rounded-xl relative transition-all duration-1000 md:top-0 top-[999px] md:right-[999px]`,
+        // className: `aspect-square max-h-[720px] max-w-[720px] -z-10 md:w-2/5 w-4/5 mb-12 md:my-12 rounded-xl relative transition-all duration-1000`,
         src: portrait,
         alt: 'Portrait',
         id: 'portrait'
