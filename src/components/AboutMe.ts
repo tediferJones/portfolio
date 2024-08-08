@@ -60,7 +60,7 @@ export default function AboutMe() {
             return (
               LinkTo({
                 // className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-sky-600 hover:bg-sky-800 rounded-xl transition-colors duration-300',
-                className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-blue-600 hover:bg-blue-800 rounded-xl transition-colors duration-300',
+                className: 'flex-1 p-8 text-lg text-white flex gap-2 items-center justify-center bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors duration-300',
                 content: getLinkInfo(key)
               })
             )

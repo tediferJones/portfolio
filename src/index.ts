@@ -13,14 +13,8 @@ import CommandLineProjects from '@/components/CommandLineProjects';
 import AllProjects from '@/components/AllProjects';
 
 // TO DO
-// Consider making header full width even at larger screen sizes
-// Install font awesome from npm instead of using CDN
-// Add manifest.json to public folder
-//  - Copy from scoreboard app
-//  - Will probably also have to resize ico
-// Make new favicon matching new primary color
-//  - Favicon can be found at fontawesome.com, named address-card
 // Consider trying to inline css and portrait into html file
+// Move assets from src/assets to public
 
 const loadingId = 'github'
 document.body.appendChild(

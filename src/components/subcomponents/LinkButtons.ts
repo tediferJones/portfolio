@@ -19,8 +19,9 @@ addClasses?: string
       LinkTo({
         // className: `${sharedClasses} bg-blue-800 hover:bg-blue-950`,
         // className: `${sharedClasses} bg-fuchsia-600 hover:bg-fuchsia-700`,
-        className: `${sharedClasses} bg-blue-700 hover:bg-blue-800`,
+        // className: `${sharedClasses} bg-blue-700 hover:bg-blue-800`,
         // className: sharedClasses,
+        className: `${sharedClasses} text-white bg-orange-500 font-bold`,
         content: {
           href: codeUrl,
           name: 'View Code',
@@ -32,8 +33,9 @@ addClasses?: string
         LinkTo({
           // className: `${sharedClasses} bg-teal-500 hover:bg-teal-600`,
           // className: `${sharedClasses} bg-pink-600 hover:bg-pink-700`,
-          className: `${sharedClasses} bg-blue-700 hover:bg-blue-800`,
+          // className: `${sharedClasses} bg-blue-700 hover:bg-blue-800`,
           // className: sharedClasses,
+          className: `${sharedClasses} text-white bg-rose-500 font-bold`,
           content: {
             href: pageUrl,
             name: 'View Page',
