@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
-    "dev": "DEBUG=true bun nodemon"
+    "dev": "DEBUG=true bun nodemon",
+    "prod": "rm docs/* && cp public/* docs/"
   },
   "devDependencies": {
     "@types/bun": "latest"

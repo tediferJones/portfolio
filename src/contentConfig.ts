@@ -19,7 +19,7 @@ const externalPages: { [key: string]: string } = {
 }
 
 // const portrait = require('./assets/images/portrait.jpg');
-const portrait = '/portrait.jpg'
+const portrait = 'portrait.jpg'
 const bio = [
   'I am a full stack web developer who really enjoys trying to find new ways to solve novel and complex problems',
   'My goal is to learn as much as I can about how the web works',
@@ -139,7 +139,7 @@ const devicons: { [key: string]: string } = {
 
 const linkOptions: { [key: string]: MenuItem } = {
   // 'Resume': { href: require('./assets/documents/resume.pdf'), icon: 'fa-solid fa-file-invoice', newTab: true },
-  'Resume': { href: '/resume.pdf', icon: 'fa-solid fa-file-invoice', newTab: true },
+  'Resume': { href: 'resume.pdf', icon: 'fa-solid fa-file-invoice', newTab: true },
   'GitHub': { href: 'https://github.com/tediferJones', icon: 'fa-brands fa-github', newTab: true },
   'Email': { href: 'mailto:theo_drz@live.com', icon: 'fa-solid fa-envelope-open-text', newTab: true, },
   'Phone': { href: 'tel:+14128891992', icon: 'fa-solid fa-phone-volume', newTab: true },
