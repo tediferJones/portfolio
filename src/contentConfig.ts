@@ -1,4 +1,4 @@
-import type { MenuItem } from './types';
+import type { MenuItem } from '@/types';
 
 const ignoredRepos = [ 'nextjs-approuter-shadcn' ];
 const externalPages: { [key: string]: string } = {
@@ -18,7 +18,6 @@ const externalPages: { [key: string]: string } = {
   'odin-basic-informational-site': 'https://replit.com/@ted_jones671/odin-basic-informational-site',
 }
 
-// const portrait = require('./assets/images/portrait.jpg');
 const portrait = 'portrait.jpg'
 const bio = [
   'I am a full stack web developer who really enjoys trying to find new ways to solve novel and complex problems',
@@ -57,12 +56,6 @@ const techExp: { [key: string]: string[] }[] = [{
 ];
 
 const frontEndProjectNames = [
-  // 'html-to-pdf',
-  // 'instagram-history-finder',
-  // 'odin-shopping-cart',
-  // 'odin-memory-card',
-
-  // 'odin-personal-portfolio',
   'html-to-pdf',
   'instagram-history-finder',
   'odin-shopping-cart',
@@ -120,15 +113,11 @@ const devicons: { [key: string]: string } = {
   'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' ,
   'NextJS':     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg' ,
   'React':      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' ,
-  // 'Tailwind':   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
   'Tailwind':   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-  // 'Tailwind':   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg',
-  // 'Express':    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg',
   'Bun':        'https://api.iconify.design/devicon/bun.svg',
   'NodeJS':     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
   'Bash':       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' ,
   'MongoDB':    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg',
-  // 'MySQL':      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' ,
   'SQLite':     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
   'HTML':       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg' ,
   'CSS':        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg',
@@ -138,7 +127,6 @@ const devicons: { [key: string]: string } = {
 }
 
 const linkOptions: { [key: string]: MenuItem } = {
-  // 'Resume': { href: require('./assets/documents/resume.pdf'), icon: 'fa-solid fa-file-invoice', newTab: true },
   'Resume': { href: 'resume.pdf', icon: 'fa-solid fa-file-invoice', newTab: true },
   'GitHub': { href: 'https://github.com/tediferJones', icon: 'fa-brands fa-github', newTab: true },
   'Email': { href: 'mailto:theo_drz@live.com', icon: 'fa-solid fa-envelope-open-text', newTab: true, },

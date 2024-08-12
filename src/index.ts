@@ -14,12 +14,10 @@ import AllProjects from '@/components/AllProjects';
 
 // TO DO
 // Consider trying to inline css and portrait into html file
-// Move assets from src/assets to public
 
 const loadingId = 'github'
 document.body.appendChild(
   t('div', { id: 'root', className: 'w-full flex flex-col items-center' }, [
-  // t('div', { id: 'root', className: 'mx-auto max-w-2xl w-full flex flex-col items-center' }, [
     Header(),
     AboutMe(),
     TechnicalExperience(),

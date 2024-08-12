@@ -3,20 +3,15 @@ import type { Repo } from '@/types';
 import t from '@/lib/getTag';
 
 export default function DropDown({ repoArr, title }: { repoArr: Repo[], title: string }) {
-  // const fixedTitle = title.replace(' ', '-')
   const fixedTitle = title.replaceAll(' & ', '-').replaceAll(' ', '-')
   return (
-    // t('div', { className: `transition-colors duration-500 bg-sky-600`, id: `${fixedTitle}-container` }, [
     t('div', { className: `transition-colors duration-500 bg-blue-600`, id: `${fixedTitle}-container` }, [
       t('hr'),
       t('button', {
-        // id: title.replace(' & ', '-'),
         id: fixedTitle,
         className: 'w-full text-xl text-gray-100 p-4 px-8 flex justify-between scroll-mt-32',
         value: `${title}RepoList`,
         onclick: () => {
-          // document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-600')
-          // document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-sky-700')
           document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-blue-600')
           document.querySelector(`#${fixedTitle}-container`)?.classList.toggle('bg-blue-700')
 
