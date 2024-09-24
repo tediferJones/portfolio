@@ -14,7 +14,7 @@ export default function TechnicalExperience() {
             textContent: 'Relevant technical experience'
           })
         ]),
-        t('div', { className: 'w-4/5 flex flex-wrap' }, 
+        t('div', { className: 'w-4/5 flex flex-wrap md:flex-row flex-col' }, 
           techExp.map(col => t('div', { className: 'flex flex-col justify-evenly flex-1' },
             Object.keys(col).map(heading => BulletList({
               heading: heading,

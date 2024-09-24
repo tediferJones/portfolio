@@ -9,7 +9,7 @@ export default function BulletList({
 }) {
   return (
     !points.length ? t('h2', {
-      className: 'text-xl p-4',
+      className: 'text-xl p-2',
       textContent: 'Primary Language: TypeScript'
     }) : 
       t('div', {}, [

@@ -11,6 +11,7 @@ const externalPages: { [key: string]: string } = {
   'password-manager':              'https://pwdman.up.railway.app/',
   'movie-tracker':                 'https://movie-tracker-production.up.railway.app/',
   'scoreboard':                    'https://scoretracker.up.railway.app',
+  'snake':                         'https://snake.theodrz.me/',
 
   'odin-hangman':                  'https://replit.com/@ted_jones671/odin-hangman#hangman.rb',
   'odin-mastermind':               'https://replit.com/@ted_jones671/odin-mastermind#mastermind.rb',
@@ -76,6 +77,7 @@ const frontEndProjectNames = [
 ];
 
 const backEndProjectNames = [
+  'snake',
   'scoreboard',
   'movie-tracker',
   'password-manager',
